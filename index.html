@@ -37,6 +37,13 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            cursor: pointer;
+        }
+        .tool-box:hover {
+            background-color: #f9fafb;
+        }
+        .tool-image {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -47,30 +54,30 @@
         </h1>
         <div class="space-y-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-fade-in-up">
-                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow tool-box">
-                    <h3 class="text-2xl font-medium">Code Editor</h3>
-                    <p class="text-gray-600">Lightweight, syntax-highlighted code editing.</p>
+                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow tool-box" onclick="window.location.href='https://example.com/uplo';">
+                    <h3 class="text-2xl font-medium">UpLo</h3>
+                    <p class="text-gray-600">Lightweight, temp file storage.</p>
                 </div>
                 <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/600x400?text=Code+Editor" alt="Code Editor Preview" class="rounded-xl shadow-xl w-full h-[400px] object-cover">
+                    <img src="img/uplo.jpeg" alt="Code Editor Preview" class="rounded-xl shadow-xl w-full h-[400px] object-cover tool-image" onclick="window.location.href='https://example.com/uplo';">
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-fade-in-up">
-                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow tool-box">
+                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow tool-box" onclick="window.location.href='https://example.com/image-compressor';">
                     <h3 class="text-2xl font-medium">Image Compressor</h3>
                     <p class="text-gray-600">Reduce image sizes without quality loss.</p>
                 </div>
                 <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/600x400?text=Image+Compressor" alt="Image Compressor Preview" class="rounded-xl shadow-xl w-full h-[400px] object-cover">
+                    <img src="https://via.placeholder.com/600x400?text=Image+Compressor" alt="Image Compressor Preview" class="rounded-xl shadow-xl w-full h-[400px] object-cover tool-image" onclick="window.location.href='https://example.com/image-compressor';">
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-fade-in-up">
-                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow tool-box">
+                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow tool-box" onclick="window.location.href='https://example.com/task-manager';">
                     <h3 class="text-2xl font-medium">Task Manager</h3>
                     <p class="text-gray-600">Organize tasks with intuitive drag-and-drop.</p>
                 </div>
                 <div class="flex justify-center">
-                    <img src="https://via.placeholder.com/600x400?text=Task+Manager" alt="Task Manager Preview" class="rounded-xl shadow-xl w-full h-[400px] object-cover">
+                    <img src="https://via.placeholder.com/600x400?text=Task+Manager" alt="Task Manager Preview" class="rounded-xl shadow-xl w-full h-[400px] object-cover tool-image" onclick="window.location.href='https://example.com/task-manager';">
                 </div>
             </div>
         </div>
